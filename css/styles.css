@@ -1,0 +1,196 @@
+:root {
+  --color-blue-dark: #011c44;
+  --color-blue-light: #2b7fff;
+  --color-white: #ffffff;
+  --color-gray: #4a4a4a;
+  --color-dark: #000000;
+  --color: #747272;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Advantages section */
+.advantages {
+  color: var(--color-blue-dark);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.advantages:hover {
+  color: var(--color-blue-light);
+}
+/* Navigation section */
+.navigation {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+}
+.clinik {
+  font-size: 18px;
+  font-weight: 400;
+}
+/* Title section */
+.section-title {
+  color: var(--color-blue-dark);
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.section-title .beauty {
+  color: var(--color-blue-light);
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.section-title .accent {
+  color: var(--color-blue-light);
+}
+
+.title {
+  color: var(--color-blue-light);
+  font-family: "Play";
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+}
+
+/* Button section */
+.button {
+  color: var(--color-white);
+  border-radius: 32px;
+  background-color: var(--color-blue-light);
+  border-color: var(--color-blue-light);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+
+.button:hover {
+  color: var(--color-blue-dark);
+  background-color: transparent;
+}
+/* Description */
+.description {
+  color: var(--color-gray);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* Paragraph */
+.paragraph {
+  color: var(--color-blue-dark);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.paragraph .accent {
+  color: var(--color-blue-dark);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/* Our-advantages */
+.our-advantages {
+  border-radius: 32px;
+  background: #fff;
+  /* beauty landing 2/Ef1 */
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+}
+
+/* About-us */
+.about-us {
+  color: var(--color-dark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Our-work */
+.our-work {
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+/* Button-main-section */
+.button-main {
+  color: var(--color-white);
+  border-radius: 32px;
+  background-color: var(--color-blue-light);
+  border-color: var(--color-blue-light);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto";
+}
+.button-main:hover {
+  color: var(--color-blue-dark);
+  background-color: transparent;
+}
+/* Images */
+.images-background {
+  border-radius: 120px 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.73) 84.61%,
+    #011c44 101.39%
+  );
+}
+.button-politic {
+  color: var(--color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.button-politic .accent {
+  text-decoration: underline;
+}
+
+/* Background-footer */
+.background-footer {
+  background-color: var(--color-blue-dark);
+}
+/* Advantages-footer */
+.advantages-footer {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+
+.advantages-footer:hover {
+  color: var(--color-blue-light);
+}
+
+.advantages-link {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.advantages-link:hover {
+  color: var(--color-blue-light);
+}
+
+/* Data */
+.data {
+  color: var(--color);
+}

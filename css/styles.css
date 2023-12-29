@@ -9,6 +9,7 @@
 
 .body {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 address {
@@ -17,6 +18,12 @@ address {
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0px auto;
 }
 
 /* Advantages section */
@@ -77,9 +84,11 @@ ul {
   font-size: 18px;
   font-weight: 600;
   font-family: "Roboto";
+  padding: 16px 32px;
 }
 
 .button:hover {
+  border-color: var(--color-blue-light);
   color: var(--color-blue-dark);
   background-color: transparent;
 }
@@ -136,6 +145,7 @@ ul {
   font-size: 18px;
   font-weight: 600;
   font-family: "Roboto";
+  padding: 16px 32px;
 }
 .button-main:hover {
   color: var(--color-blue-dark);

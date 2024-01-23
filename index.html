@@ -20,60 +20,70 @@
     <link rel="stylesheet" href="./css/mainstyle.css" />
   </head>
   <body class="body">
-    <header class="section">
-      <div class="container header-container">
-        <nav class="header-nav">
+    <header>
+      <div class="section-hero">
+        <div class="container header-container">
           <a href="./index.html" class="logo-1">beauty <br />zone</a>
-          <ul class="header-menu">
-            <li><a class="advantages" href="#about">Про нас</a></li>
-            <li><a class="advantages" href="#why">Чому ми</a></li>
-            <li>
-              <a class="advantages" href="#procedures">Наші процедури</a>
-            </li>
-            <li><a class="advantages" href="#contacts">Контакти</a></li>
-          </ul>
-          <ul class="header-link">
-            <li>
-              <a rel="noopener noreferrer" href="tel:380960000007">
-                <svg class="address-icon" widht="32" height="32">
-                  <use href="./images/icons.svg#icon-telephone"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" widht="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" widht="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
+
+          <nav class="header-nav">
+            <ul class="header-menu">
+              <li><a class="advantages" href="#about">Про нас</a></li>
+              <li><a class="advantages" href="#why">Чому ми</a></li>
+              <li>
+                <a class="advantages" href="#procedures">Наші процедури</a>
+              </li>
+              <li><a class="advantages" href="#contacts">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="header-box-link">
+            <ul class="header-link">
+              <li>
+                <a rel="noopener noreferrer" href="tel:380960000007">
+                  <svg class="address-icon" widht="32" height="32">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" widht="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" widht="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section>
-        <div class="container">
-          <div class="hero-section">
-            <h3 class="clinik">Косметологічна клініка</h3>
-            <h1 lang="en" class="title">beauty <br />zone</h1>
-            <button type="button" class="button">Замовити дзвінок</button>
-            <p class="description">
-              Запишись та отримай безкоштовну <br />
-              консультацію нашого косметолога
-            </p>
+        <div class="hero-section">
+          <div class="container-hero">
+            <div>
+              <h3 class="clinik">Косметологічна клініка</h3>
+              <h1 lang="en" class="title">beauty <br />zone</h1>
+              <button type="button" class="button open-modal-js">
+                Замовити дзвінок
+              </button>
+              <p class="description">
+                Запишись та отримай безкоштовну <br />
+                консультацію нашого косметолога
+              </p>
+            </div>
+            то
           </div>
         </div>
       </section>
       <section id="about">
-        <div class="container">
+        <div class="container about-flex">
           <div class="about-container">
             <div class="about-content">
               <h2 class="section-title">
@@ -93,15 +103,19 @@
           </div>
           <div class="photo">
             <img
-              class="woman-photo"
+              class="woman-photo woman-1"
               src="./images/face.png"
               alt="лице жінки з стрілкою вперед"
             />
-            <img src="./images/star-1.png" alt="велика зірка" />
-            <img src="./images/star-2.png" alt="середня зірка" />
-            <img src="./images/star-3.png" alt="маленька зірка" />
+            <img class="star-1" src="./images/star-1.png" alt="велика зірка" />
+            <img class="star-2" src="./images/star-2.png" alt="середня зірка" />
             <img
-              class="woman-photo"
+              class="star-3"
+              src="./images/star-3.png"
+              alt="маленька зірка"
+            />
+            <img
+              class="woman-photo woman-2"
               src="./images/face2.png"
               alt="лице жінки з стрілкою назад"
             />
@@ -226,8 +240,7 @@
               <li><p>Ваше ім'я та прізвище</p></li>
               <li><p>Ваш номер телефону</p></li>
               <li><p>Ваша електронна пошта</p></li>
-            </ul>
-
+            </ul>))))
             <button class="button-main" type="button">
               Записатись безкоштовно
             </button>
@@ -334,10 +347,11 @@
         alt="баночки з чимось"
       />
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop modal-js is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
       </div>
     </div>
+    <script type="module" src="/index.js"></script>
   </body>
 </html>

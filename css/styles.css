@@ -18,6 +18,15 @@ ul {
   margin: 0px auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -9999em;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .section-hero {
   /* max-width: 1440px; */
   width: 100%;
@@ -533,7 +542,7 @@ ul {
 }
 
 .modal {
-  /* display: none; */
+  padding: 42px 144px;
   position: relative;
   width: 720px;
   height: 680px;
@@ -546,4 +555,96 @@ ul {
   position: absolute;
   top: 42px;
   right: 42px;
+}
+
+/* Form */
+.order-call {
+  font-family: Play;
+  color: var(--color-white);
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.record {
+  margin: 0 auto;
+  max-width: 275px;
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.record .accent {
+  color: var(--color-blue-light);
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form-label {
+  position: absolute;
+  top: 18px;
+  left: 32px;
+}
+
+.form-input {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 33px;
+  width: 310px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 32px;
+  border: 2px solid var(--color);
+  background-color: transparent;
+}
+
+.form-input:focus {
+  background-color: var(--color);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-white);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.button-modal {
+  display: block;
+  margin: 0 auto 8px;
+  color: var(--color-white);
+  border-radius: 32px;
+  background-color: var(--color-blue-light);
+  border: 2px solid var(--color-blue-light);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto";
+  padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.form-politic {
+  margin: 0 auto;
+  max-width: 220px;
+  color: var(--color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-link {
+  color: var(--color);
 }

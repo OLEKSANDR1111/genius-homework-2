@@ -235,19 +235,6 @@
               Запишіться <span class="accent">безкоштовно</span> та отримайте
               подарунок
             </h3>
-            <!-- <ul>
-              <li><p>Ваше ім'я та прізвище</p></li>
-              <li><p>Ваш номер телефону</p></li>
-              <li><p>Ваша електронна пошта</p></li>
-            </ul>))))
-            <button class="button-main" type="button">
-              Записатись безкоштовно
-            </button>
-            <a class="button-politic" href="#" target="_blank"
-              >Натискаючи на кнопку я погоджуюсь
-              <span class="accent">з політикою конфіденційності</span></a
-            >
-           -->
           </div>
         </div>
       </section>
@@ -348,7 +335,68 @@
     </footer>
     <div class="backdrop modal-js is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal-btn-close" type="button">
+          <svg class="modal-close" widht="32" height="32">
+            <use href="./images/exit-modal.svg"></use>
+          </svg>
+        </button>
+        <h2 class="order-call">Замовити дзвінок</h2>
+        <p class="record">
+          Запишіться <span class="accent">безкоштовно</span> та отримайте
+          подарунок
+        </p>
+        <form name="modal-form" autocomplete="on"></form>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-name"
+            >Ваше ім'я та прізвище</label
+          >
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Ваше ім'я та прізвище"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-tel"
+            >Ваш номер телефону</label
+          >
+          <input
+            class="form-input"
+            type="tel"
+            id="user-tel"
+            name="user-tel"
+            placeholder="Ваш номер телефону"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email"
+            >Ваша електронна пошта</label
+          >
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Ваша електронна пошта"
+            required
+          />
+        </div>
+
+        <button class="button-modal" type="submit">
+          Записатись безкоштовно
+        </button>
+
+        <p class="form-politic">
+          Натискаючи на кнопку я погоджуюсь
+          <a class="form-link" href="#"> з політикою конфіденційності</a>
+        </p>
       </div>
     </div>
     <script type="module" src="/index.js"></script>
